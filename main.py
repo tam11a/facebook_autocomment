@@ -19,5 +19,5 @@ if __name__ == "__main__":
 
     bot = Bot("Your Email", "Your Password", 'chrome')
     bot.commentInFlow(url, comments, 10)
-    bot.close()
+    bot.Close()
     #--------------- url, comment list and how many comments you want to write
