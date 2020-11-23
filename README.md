@@ -2,12 +2,14 @@
 
 The Script is Written with Python-Selenium.
 Download the Source. 
-and Download DriverDrive(Chrome/Firefox) for Your OS.
-Make Sure You placed your DriverDrive in "drivers" Folder.
+and Download WebDriver(Chrome/Firefox) for Your OS.
+Make Sure You placed your WebDriver in "drivers" Folder.
 else edit path from "root/fb/fbcomment.py" [line: 39 for Chrome WebDriver] & [line: 41: for Firefox WebDriver].
 install requirements.
 Edit main.py with your informations like Post URL, List of Comments, How many comments you want to make Etc.
 and Run "main.py".
+
+[N.B. WebDrivers Used here is for Windows 64bit OS. Download Your version.]
 
 Links to some of the more popular browser drivers follow.
 
