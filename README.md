@@ -37,3 +37,23 @@ Edit/Write "main.py" like,
         bot = Bot("Your Email", "Your Password", 'chrome') #mail, pass, 'chrome'/'firefox' the browser you use!
         bot.commentInFlow(url, comments, 10) 
         bot.close()
+
+
+If You are not a Python User, Copy/Paste this Code in main.py,
+
+    import os
+    from fb.fbcomment import Client
+
+    class Bot(Client):
+        pass
+
+    if __name__ == "__main__":
+        x = os.popen('pip install -r requirements.txt').read()
+        print(x)
+        comments = []
+        bot = Bot(str(input('User Email -->')), str(input('Password   -->')), str(input('Your Browser Name (chrome/firefox)-->')))
+        url = str(input('Post Link -->'))
+        for i in range(int(input('How many Comment You want to add in your Comment list -->'))):
+            comments.append(str(input('$[Comment #'+str(i+1)+' -->')))
+        bot.commentInFlow(url, comments, int(input('Number of Comments -->')))
+
