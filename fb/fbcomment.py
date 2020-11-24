@@ -119,8 +119,8 @@ class Client:
         return input("Enter 2fa Code -->")
 
     def Open(self, link="http://m.facebook.com"):
-        print('Opening ', end='')
-        print(link)
+        #print('Opening ', end='')
+        #print(link)
         sleep(1)
         self.browser.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 't')
         self.browser.get(link)
